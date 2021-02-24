@@ -25,13 +25,6 @@ class App {
     this.page = new PageComponent(PageItemComponent);
     this.page.attachTo(appRoot);
 
-    this.page.addChild(
-      new ImageComponent("image", "https://picsum.photos/300/150")
-    );
-    this.page.addChild(
-      new VideoComponent("video", "https://www.youtube.com/watch?v=zqFhl-D6vwg")
-    );
-
     this.bindElementToDialog<MediaSectionInput>(
       "#new-image",
       MediaSectionInput,
